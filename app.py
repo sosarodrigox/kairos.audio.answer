@@ -1,4 +1,6 @@
 import streamlit as st
+from streamlit_audio import st_audio
+
 
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
