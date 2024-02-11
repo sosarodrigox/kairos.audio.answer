@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_audio import st_audio
+from streamlit_player import st_player
 
 
 from PyPDF2 import PdfReader
@@ -51,3 +51,5 @@ if pdf_obj:
         response = chain.run(input_documents=docs, question=user_question)
 
         st.write(response)
+
+st_player("https://soundcloud.com/libros-para-emprendedores/las-4-disciplinas-de-la")
