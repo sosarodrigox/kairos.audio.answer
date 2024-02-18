@@ -1,12 +1,12 @@
 const PORT = process.env.PORT || 8000;
 const express = require('express');
 const cors = require('cors');
-const e = require('express');
+require('dotenv').config();
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-const API_KEY = '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';
+const API_KEY = process.env.OPENAI_API_KEY;
 
 app.listen(PORT, () => console.log(`Your server running on port ${PORT}`));
 
