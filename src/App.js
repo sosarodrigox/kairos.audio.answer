@@ -84,7 +84,7 @@ const App = () => {
       </section>
       <section className='main'>
         {!currentTitle && <h1>PodChat V1.0</h1>}
-        {/* <ReactPlayerTest /> */}
+        <ReactPlayerTest />
         <ul className='feed'>
           {currentChat?.map((chatMessage, index) => <li key={index} >
             <p className='role'>{chatMessage.role}</p>
